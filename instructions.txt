@@ -1,0 +1,12 @@
+Goal:
+Combining the html from the Server Client Connection Crud lesson (https://github.com/ccny-ss-js-dec-2020/class-16_02-23-21/tree/master/server-client-connection-crud/lesson) with passport,
+create an app that will only let you see the dog breed crud html if you're signed in.
+
+1. Everything will happen at the root route '/' in this application.
+2. When you visit the root route and noone is logged in,
+   you will only see the options to sign up or login
+3. When someone eventually logs in, then when you visit the root route,
+   You will see all of the HTML involved in the dog breed CRUD
+4. Only when a user is logged in will they see the html for the dog breed CRUD
+5. When someone logs out, then the root route will go back to showing the options
+   to sign up or login.

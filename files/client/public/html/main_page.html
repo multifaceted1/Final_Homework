@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>First Postgres Template</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="./public/css/main_page.css">
+</head>
+<body>
+	<div class="container">
+		<div class="jumbotron text-center">
+			<h1>Welcome....Welcome</h1>
+			<h2>Which option shall you choose</h2>
+		</div>
+		<div class="text-center center-block">
+			<div id="direct-buttons" class="btn-group" role="group" aria-label="Basic example">
+			  <a href="/sign-up" type="button" id="sign-up-button" class="btn btn-primary sign-buttons">Sign Up</a>
+			  <a href="/sign-in" type="button" id="sign-in-button" class="btn btn-info sign-buttons">Sign In</a>
+			</div>
+		</div>
+		<div class="dogs">
+			<div class="list-of-dogs">
+				<h3>Dog Breeds</h3>
+				<ul class="dogs-list"></ul>
+			</div>
+			<div class="insert-dog-breed">
+				<h3>Insert a Dog Breed</h3>
+				<form id="insert-dog-breed-form">
+					<label for="breed">Breed</label><br>
+					<input type="text" class="post-breed-inputs" id="breed-input"/><br>
+					<label for="origin">Origin</label><br>
+					<input type="text" class="post-breed-inputs" id="origin-input"/><br>
+					<label for="breed">Size</label><br>
+					<input type="text" class="post-breed-inputs" id="size-input"/><br>
+					<label for="origin">Average Life Span</label><br>
+					<input type="text" class="post-breed-inputs" id="average-life-span-input"/><br>
+					<input type="submit" value="Submit"/>
+				</form>
+				<div>
+					<h4 id="successful-post"></h4>
+					<p id="error-message"></p>
+				</div>
+			</div>
+			<div class="update-or-delete">
+				<h3>Update or Delete?</h3>
+				<select class="update-or-delete-select">
+					<option selected hidden disabled>Choose One</option>
+					<option value="update">Update</option>
+					<option value="delete">Delete</option>
+				</select>
+				<select class="dog-breed-select"></select>
+				<div class="dynamic-inputs"></div>
+			</div>
+		</div>	
+	</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="./public/js/main_page.js"></script>
+</body>
+</html>
